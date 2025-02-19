@@ -1,0 +1,71 @@
+
+@keyframes appear{
+    0%{
+        opacity: 0.7;
+        scale: 0.8;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.career-card{
+    animation: appear 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes certificate{
+    0%{
+        transform: translateY(250px);
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.certificate-section , .rectangle1, .highlight-card-section, .section2-container, .section3-container, .career-card-section, .why-section-main, .why-card-section, .student-review-container, .review-card-section, .blue-container, .curriculum-box-section, .curriculum-box, .faq-section-container{
+    animation: certificate 3s;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes curriculumTitle{
+    0%{
+        transform: translateX(50px);
+        opacity: 0.6;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.curriculum-box h4{
+    animation: curriculumTitle 1s;
+    animation-timeline: view();
+    animation-range: entry 50% cover;
+}
+
+@keyframes companiesScroll{
+    0%{
+        left: 100vh;
+    }
+    50%{
+        left: 0px;
+    }
+    100%{
+        left: -100vh;
+    }
+}
+
+@keyframes companiesScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

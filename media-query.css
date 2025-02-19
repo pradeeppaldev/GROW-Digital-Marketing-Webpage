@@ -1,0 +1,149 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section{
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 381px) and (max-width: 768px) {
+    .hero-section{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .underline-img img{
+        width: 300px;
+    }
+    .hero-right{
+        width: 90vw;
+        margin: 40px 0px 5px 0px;
+    }
+    .logo{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .headBtns{
+        width: 100vw;
+        height: 65px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        z-index: 2;
+    }
+    .navbtn{
+        font-size: 18px;
+        padding: 7px;
+        padding: 10px;
+    }
+     .highlight-card{
+        background-color: white;
+        width: 300px;
+        height: 80px;
+        margin: 10px 10px;
+        border-radius: 10px;
+        padding: 10px 10px;
+    }
+    .high-text h4{
+        margin-top: 10px;
+        margin-bottom: -20px;
+        font-size: 18px;
+    }
+    .high-text p{
+        font-size: 15px;
+    }
+    .high-img img{
+        width: 60px;
+    }
+    /* footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+        margin-bottom: 70px;
+    }
+    .footer img{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .accordion-item{
+        width: 90vw;
+        margin: 5px 0px;
+    }
+
+    .review-card-section{
+        flex-direction: column;
+    }
+    .review-card{
+        margin: 15px 0px;
+        width: auto;
+        height: auto;
+    }
+    .blue-box{
+        height: auto;
+        width: auto;
+        padding: 25px 15px;
+    }
+    .certificate-section{
+        flex-direction: column;
+    }
+    .rect-certify{
+        width: auto;
+    }
+    .certificate{
+        padding: 0px;
+        margin-top: 15px;
+    }
+    .cert-btn{
+        width: 100%;
+    }
+    .curriculum-box{
+        padding: 10px;
+        margin: 20px 0px;
+    }
+    .curriculum-box h4 span{
+        margin-left: 3px;
+    }
+
+    @keyframes certificate{
+        0%{
+            transform: translateY(200px);
+            opacity: 0.3;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .certificate-section-left, .certificate-section-right , .hero-right, .review-card{
+    animation: certificate 3s;
+    animation-timeline: view();
+    animation-range: entry 0;
+    }
+
+    .curriculum-box h4{
+        animation: none;
+    }
+
+    .companies-img-section img {
+        height: 40px;
+        width: 100px;
+        margin-right: 20px; /* Adjust spacing */
+    }
+    
+}
