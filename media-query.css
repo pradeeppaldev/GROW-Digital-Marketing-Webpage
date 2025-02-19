@@ -5,7 +5,10 @@
 }
 
 
-@media (min-width: 381px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 768px) {
+    .hero-left{
+        margin-left: 30px;
+    }
     .hero-section{
         /* flex-wrap: wrap; */
         flex-direction: column;
@@ -54,10 +57,10 @@
     .high-text h4{
         margin-top: 10px;
         margin-bottom: -20px;
-        font-size: 18px;
+        font-size: 15px;
     }
     .high-text p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .high-img img{
         width: 60px;
@@ -107,6 +110,14 @@
     .certificate{
         padding: 0px;
         margin-top: 15px;
+    }
+    .certificate img{
+        height: auto;
+        width: 80vw;
+    }
+    .review-para{
+        flex-wrap: wrap;
+        overflow: hidden;
     }
     .cert-btn{
         width: 100%;
